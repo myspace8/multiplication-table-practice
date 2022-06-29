@@ -32,7 +32,7 @@ startBtn.addEventListener('click', ()=> {
         timing.innerHTML = counter;
         if ( counter < 1 ) {
             clearInterval(timer);
-            startAgainBtn.style.display = 'block';
+            startAgainBtn.style.display = 'none';
             buttons.forEach(button => {
                 button.disabled = true;
                 startAgainBtn.addEventListener('click', () => {
