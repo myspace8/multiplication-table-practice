@@ -65,6 +65,7 @@ body {
 }
 
 .startAgainBtn {
+    display: none;
     background-color: #4b4b4b;
     color: #fff;
     border-radius: 10px;
