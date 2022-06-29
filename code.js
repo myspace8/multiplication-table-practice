@@ -26,7 +26,7 @@ secondNumber.innerHTML = randomNumber;
 startBtn.addEventListener('click', ()=> {
 
 
-    let counter = 16;
+    let counter = 61;
     var timer = setInterval(() => {
         counter--;
         timing.innerHTML = counter;
