@@ -19,7 +19,14 @@ body {
 
 .gaming-info {
     display: flex;
-    column-gap: 90px;
+}
+
+.score-text {
+    margin-right: 16px;
+}
+
+.timer-text {
+    margin-left: 16px;
 }
 
 
