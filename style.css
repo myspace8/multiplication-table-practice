@@ -18,8 +18,9 @@ body {
 }
 
 .gaming-info {
+    width: 100%;
     display: flex;
-    column-gap: 70px;
+    justify-content: space-evenly;
 }
 
 
@@ -27,7 +28,6 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    row-gap: 10px;
 }
 
 .score-emoji, .score-count {
@@ -35,22 +35,12 @@ body {
     font-size: 1.5rem;
 }
 
-.count {
-    display: flex;
-    justify-content: center;
-    background-color: #4b4b4b;
-    color: #ff914d;
-    column-gap: 10px;
-    padding: 1rem;
-}
-
 .time-count {
     display: flex;
     justify-content: center;
     color: #ff914d;
-    padding: 0rem;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .score-count, .time-count, .startAgainBtn {
@@ -67,15 +57,15 @@ body {
 
 
 .starting-container {
-    display: flex;
-    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.greetings {
+.starting-container p {
     color: #fff;
     background-color: #4b4b4b;
-    margin-bottom: 0;
     padding: .7rem;
+    text-align: center;
 }
 
 .start-btn {

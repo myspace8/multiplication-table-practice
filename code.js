@@ -1,7 +1,6 @@
 const sampleQuestion = document.querySelector('.sample-question');
 const actualQuestion = document.querySelector('.actual-question');
 const startingContainer = document.querySelector('.starting-container');
-const greeting = document.querySelector('.greetings');
 const firstNumber = document.querySelector('.first-number');
 const secondNumber = document.querySelector('.second-number');
 const answer = document.querySelector('.answer'); 
@@ -26,19 +25,19 @@ secondNumber.innerHTML = randomNumber;
 startBtn.addEventListener('click', ()=> {
 
 
-    let counter = 16;
+    let counter = 61;
     var timer = setInterval(() => {
         counter--;
         timing.innerHTML = counter;
         if ( counter < 1 ) {
             clearInterval(timer);
-            startAgainBtn.style.display = 'block';
+            startAgainBtn.style.display = 'none';
             buttons.forEach(button => {
                 button.disabled = true;
-                startAgainBtn.addEventListener('click', () => {
+                // startAgainBtn.addEventListener('click', () => {
                     
-                    // TO-DO... ADD START AGAIN FUNCTIONS
-                })
+                //     // TO-DO... ADD START AGAIN FUNCTIONS
+                // })
             })
         }    
     }, 1000);
@@ -50,12 +49,20 @@ startBtn.addEventListener('click', ()=> {
             if ( Number(firstNumber.innerHTML) * randomNumber == Number(answer.innerHTML)) {
                 randomNumber = Math.floor(Math.random() * (12 - 1 + 1) + 1);
                 secondNumber.innerHTML = randomNumber; 
+                // setTimeAgain();
                 myScoreIncrement();   
             } else {
                 myScoreDecrement();
             }
         })
     })
+    
+
+    // Pause count and reset it zero
+    function setTimeAgain() {
+        clearInterval(timer);
+        timing.innerHTML = 0;
+    }
 
     startingContainer.style.display = 'none';
     sampleQuestion.style.display = 'none';
