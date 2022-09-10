@@ -48,11 +48,14 @@ body {
 }
 
 .startAgainBtn {
+    display: none;
     background-color: #4b4b4b;
     color: #fff;
-    border-radius: 10px;
+    font-family: inherit;
     padding: .6rem;
+    border: none;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 
